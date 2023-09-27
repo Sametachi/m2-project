@@ -1,0 +1,5 @@
+add_library(granny2 INTERFACE granny.h granny2_spu_samplemodel.h radtypes.h granny2_static.lib)
+target_link_libraries(granny2 INTERFACE ${CMAKE_CURRENT_LIST_DIR}/granny2_static.lib)
+target_include_directories(granny2 INTERFACE ${CMAKE_CURRENT_LIST_DIR})
+set_target_properties(granny2 PROPERTIES FOLDER ThirdParty)
+target_compile_definitions(granny2 INTERFACE BUILDING_GRANNY_STATIC=1)

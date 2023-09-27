@@ -1,0 +1,31 @@
+#pragma once
+#include <unordered_map>
+
+enum EFlyEffectTypes
+{
+	INDEX_FLY_TYPE_NORMAL		= 0,
+	INDEX_FLY_TYPE_FIRE_CRACKER = 1,
+	INDEX_FLY_TYPE_AUTO_FIRE	= 2,
+};
+
+enum EFlyEffectIndexes
+{
+	FLY_NONE					= 0,
+	FLY_EXP						= 1,
+	FLY_HP_MEDIUM				= 2,
+	FLY_HP_BIG					= 3,
+	FLY_SP_SMALL				= 4,
+	FLY_SP_MEDIUM				= 5,
+	FLY_SP_BIG					= 6,
+	FLY_FIREWORK1				= 7,
+	FLY_FIREWORK2				= 8,
+	FLY_FIREWORK3				= 9,
+	FLY_FIREWORK4				= 10,
+	FLY_FIREWORK5				= 11,
+	FLY_FIREWORK6				= 12,
+	FLY_FIREWORK_XMAS			= 13,
+	FLY_CHAIN_LIGHTNING			= 14,
+	FLY_HP_SMALL				= 15,
+	FLY_SKILL_MUYEONG			= 16,
+	FLY_QUIVER_ATTACK_NORMAL	= 17,
+};

@@ -1,0 +1,8 @@
+#pragma once
+
+#define HEADER_GT_LOGIN				0x10
+#define HEADER_GT_LOGOUT			0x11
+#define HEADER_TG_TEEN_NOTICE		0x12
+#define HEADER_TG_FORCE_LOGOUT		0x13
+#define HEADER_TG_LOGIN_NOTICE		0x14
+

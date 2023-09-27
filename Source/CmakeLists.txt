@@ -1,0 +1,10 @@
+add_subdirectory(ThirdParty)
+add_subdirectory(Libraries)
+
+if (NOT BUILD_NO_SERVER)
+    add_subdirectory(Server)
+endif()
+
+if (NOT BUILD_NO_CLIENT)
+    add_subdirectory(Client)
+endif()

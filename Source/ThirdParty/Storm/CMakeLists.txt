@@ -1,0 +1,210 @@
+# storm cmake
+set(INC
+    Include/Storm/AbstractFactory.hpp
+    Include/Storm/Config.hpp
+    Include/Storm/ErrorReporting.hpp
+    Include/Storm/Namespaces.hpp
+    Include/Storm/optionparser.h
+    Include/Storm/String.hpp
+    Include/Storm/StringFlags.hpp
+    Include/Storm/StringFwd.hpp
+    Include/Storm/StringUtil-impl.hpp
+    Include/Storm/StringUtil.hpp
+    Include/Storm/SystemError.hpp
+    Include/Storm/Tokenizer-impl.hpp
+    Include/Storm/Tokenizer.hpp
+    Include/Storm/UnicodeUtil.hpp
+    Include/Storm/Util.hpp
+    Include/Storm/WindowsPlatform.hpp
+
+    Include/Storm/memory/AbstractAllocator.hpp
+    Include/Storm/memory/Allocate.hpp
+    Include/Storm/memory/Allocator-impl.hpp
+    Include/Storm/memory/Allocator.hpp
+    Include/Storm/memory/Deleter.hpp
+    Include/Storm/memory/New.hpp
+    Include/Storm/memory/NewAllocator.hpp
+    Include/Storm/memory/PoolAllocator.hpp
+    Include/Storm/memory/ScopedArray.hpp
+    Include/Storm/memory/StdAllocator-impl.hpp
+    Include/Storm/memory/StdAllocator.hpp
+    Include/Storm/memory/UniquePtr.hpp
+    Include/Storm/memory/VstlAllocator.hpp
+    Include/Storm/math/AngleUtil.hpp
+    Include/Storm/math/ApproximateDistance.hpp
+    Include/Storm/math/Eigen.hpp
+    Include/Storm/math/s.hpp
+    Include/Storm/math/XorhisftGenerator.hpp
+    Include/Storm/io/Compressor.hpp
+    Include/Storm/io/Config.hpp
+    Include/Storm/io/Decompressor.hpp
+    Include/Storm/io/Decrypter.hpp
+    Include/Storm/io/Encrypter.hpp
+    Include/Storm/io/Endian.hpp
+    Include/Storm/io/File.hpp
+    Include/Storm/io/FileLoader.hpp
+    Include/Storm/io/FileOperations.hpp
+    Include/Storm/io/FileUtil.hpp
+    Include/Storm/io/Format.hpp
+    Include/Storm/io/FormatSingleValue.hpp
+    Include/Storm/io/InputStream.hpp
+    Include/Storm/io/OutputStream.hpp
+    Include/Storm/io/Path.hpp
+    Include/Storm/io/StreamUtil.hpp
+    Include/Storm/io/TextFileLoader.hpp
+    Include/Storm/io/View.hpp
+    Include/Storm/io/WindowsFilename.hpp
+    Include/Storm/crypt/BlockCipherStreamWrapper.hpp
+    Include/Storm/crypt/Jenkins.hpp
+    Include/Storm/crypt/MurmurHash3.hpp
+    Include/Storm/crypt/Sleepycat.hpp
+    Include/Storm/crypt/Xtea.hpp
+    Include/vstl/algorithm.hpp
+    Include/vstl/config.hpp
+    Include/vstl/iterator.hpp
+    Include/vstl/memory.hpp
+    Include/vstl/string.hpp
+    Include/vstl/string_fwd.hpp
+    Include/vstl/utility.hpp
+    Include/vstl/algorithm/copy.hpp
+    Include/vstl/algorithm/copy_backward.hpp
+    Include/vstl/algorithm/copy_n.hpp
+    Include/vstl/algorithm/fill.hpp
+    Include/vstl/algorithm/fill_n.hpp
+    Include/vstl/algorithm/find.hpp
+    Include/vstl/algorithm/find_first_not_of.hpp
+    Include/vstl/algorithm/find_first_of.hpp
+    Include/vstl/algorithm/find_if.hpp
+    Include/vstl/algorithm/find_if_not.hpp
+    Include/vstl/algorithm/for_each.hpp
+    Include/vstl/algorithm/minmax.hpp
+    Include/vstl/algorithm/move.hpp
+    Include/vstl/algorithm/move_backward.hpp
+    Include/vstl/algorithm/move_n.hpp
+    Include/vstl/algorithm/rotate.hpp
+    Include/vstl/config/checks.hpp
+    Include/vstl/config/config.hpp
+    Include/vstl/config/cpp11.hpp
+    Include/vstl/config/platform.hpp
+    Include/vstl/functional/hash.hpp
+    Include/vstl/iterator/advance.hpp
+    Include/vstl/iterator/back_insert_iterator.hpp
+    Include/vstl/iterator/distance.hpp
+    Include/vstl/iterator/iterator.hpp
+    Include/vstl/iterator/iterator_wrapper.hpp
+    Include/vstl/iterator/reverse_iterator.hpp
+    Include/vstl/iterator/traits.hpp
+    Include/vstl/iterator/unwrap.hpp
+    Include/vstl/memory/abstract_allocator.hpp
+    Include/vstl/memory/align.hpp
+    Include/vstl/memory/allocator.hpp
+    Include/vstl/memory/allocator_adaptor.hpp
+    Include/vstl/memory/allocator_base.hpp
+    Include/vstl/memory/allocator_fwd.hpp
+    Include/vstl/memory/linear_allocator.hpp
+    Include/vstl/memory/linear_allocator_scope.hpp
+    Include/vstl/memory/scoped_allocator_adaptor.hpp
+    Include/vstl/memory/sso_allocator.hpp
+    Include/vstl/memory/uninitialized_copy.hpp
+    Include/vstl/memory/uninitialized_copy_n.hpp
+    Include/vstl/memory/uninitialized_default.hpp
+    Include/vstl/memory/uninitialized_default_n.hpp
+    Include/vstl/memory/uninitialized_fill.hpp
+    Include/vstl/memory/uninitialized_fill_n.hpp
+    Include/vstl/memory/uninitialized_move.hpp
+    Include/vstl/memory/uninitialized_move_n.hpp
+    Include/vstl/string/basic_string-impl.hpp
+    Include/vstl/string/basic_string.hpp
+    Include/vstl/string/basic_string_buffer-impl.hpp
+    Include/vstl/string/basic_string_buffer.hpp
+    Include/vstl/string/basic_string_buffer_fwd.hpp
+    Include/vstl/string/basic_string_fwd.hpp
+    Include/vstl/string/basic_string_ref-impl.hpp
+    Include/vstl/string/basic_string_ref.hpp
+    Include/vstl/string/basic_string_ref_fwd.hpp
+    Include/vstl/string/char_traits.hpp
+    Include/vstl/string/char_traits_fwd.hpp
+    Include/vstl/string/empty.hpp
+    Include/vstl/string/find.hpp
+    Include/vstl/string/find_first_not_of.hpp
+    Include/vstl/string/find_first_of.hpp
+    Include/vstl/string/find_last_not_of.hpp
+    Include/vstl/string/find_last_of.hpp
+    Include/vstl/string/helpers.hpp
+    Include/vstl/string/iterator.hpp
+    Include/vstl/string/mutable_basic_string_ref-impl.hpp
+    Include/vstl/string/mutable_basic_string_ref.hpp
+    Include/vstl/string/mutable_basic_string_ref_fwd.hpp
+    Include/vstl/string/rfind.hpp
+    Include/vstl/string/string_add_mixin.hpp
+    Include/vstl/string/string_append_mixin.hpp
+    Include/vstl/string/string_assign_mixin.hpp
+    Include/vstl/string/string_compare_mixin.hpp
+    Include/vstl/string/string_erase_mixin.hpp
+    Include/vstl/string/string_find_mixin.hpp
+    Include/vstl/string/string_insert_mixin.hpp
+    Include/vstl/string/string_replace_mixin.hpp
+    Include/vstl/type_traits/is_trivially_post_move_destructible.hpp
+    Include/vstl/utility/forward.hpp
+    Include/vstl/utility/move.hpp
+    Include/vstl/utility/pair.hpp
+    Include/vstl/utility/rel_ops.hpp
+    Include/vstl/utility/round.hpp
+    Include/vstl/utility/skip_initialization.hpp
+    Include/vstl/vector/vector-impl.hpp
+    Include/vstl/vector/vector.hpp
+    Include/vstl/vector/vector_fwd.hpp
+    Include/vstl/vector/vector_impl.hpp
+    Include/vstl/vector/vector_impl_fwd.hpp
+)
+
+set(SRC
+    Source/crypt/Jenkins.cpp
+    Source/crypt/MurmurHash3.cpp
+    Source/crypt/Sleepycat.cpp
+    Source/crypt/Xtea.cpp
+    Source/io/FileLoader.cpp
+#    Source/io/FileOperations.cpp
+    Source/io/FileUtil.cpp
+    Source/io/FormatSingleValue.cpp
+    Source/io/Path.cpp
+    Source/io/StreamUtil.cpp
+    Source/io/TextFileLoader.cpp
+    Source/io/View.cpp
+    Source/io/WindowsFilename.cpp
+    Source/memory/AbstractAllocator.cpp
+    Source/memory/Allocator.cpp
+    Source/memory/NewAllocator.cpp
+    Source/String.cpp
+    Source/StringUtil.cpp
+    Source/UnicodeUtil.cpp
+    Source/VstlAssert.cpp
+    Source/VSTL/functional/hash.cpp
+    Source/VSTL/memory/align.cpp
+    Source/VSTL/memory/allocator2.cpp
+    Source/VSTL/memory/linear_allocator.cpp
+    Source/VSTL/memory/linear_allocator_scope.cpp
+    Source/VSTL/string/char_traits.cpp
+    Source/VSTL/string/empty.cpp
+    Source/VSTL/string/string2.cpp
+    Source/VSTL/string/wstring.cpp
+    Source/VSTL/utility/skip_initialization.cpp
+)
+
+if (UNIX)
+    list(APPEND INC Include/Storm/unix/EintrWrapper.hpp)
+    list(APPEND SRC Source/io/File_Unix.cpp)
+endif()
+
+if (WIN32)
+    list(APPEND SRC Source/io/File_Win.cpp)
+endif()
+
+add_library(Storm STATIC ${SRC} ${INC})
+target_link_libraries(Storm PUBLIC fmt::fmt)
+set_target_properties(Storm PROPERTIES FOLDER "ThirdParty")
+target_include_directories(Storm PUBLIC Include)
+target_compile_definitions(Storm PUBLIC -DSPDLOG_COMPILED_LIB=1)
+
+set(LINK_DEPS Boost spdlog fmt)
+auto_dep(Storm PUBLIC)

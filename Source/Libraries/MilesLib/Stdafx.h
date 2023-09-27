@@ -1,0 +1,13 @@
+#pragma once
+#pragma warning(disable:4786)
+#pragma warning(disable:4100)
+#pragma warning(disable:4201)
+#pragma warning(default:4201)
+#include <windows.h>
+#include <soloud.h>
+#include <soloud_wav.h>
+#include <soloud_wavstream.h>
+#include "../eterBase/Utils.h"
+#include <Basic/robin_hood.hpp>
+#include <Basic/Logging.hpp>
+#include <VFE/Include/VFE.hpp>

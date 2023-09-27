@@ -1,0 +1,7 @@
+add_executable(VFEArchiver Main.cpp Main.hpp XmlUtil.hpp PackageCreator.cpp PackageCreator.hpp)
+target_compile_definitions(VFEArchiver PRIVATE -DARCHIVER)
+target_link_libraries(VFEArchiver PRIVATE VFE Storm)
+set_target_properties(VFEArchiver PROPERTIES FOLDER "Tools")
+set(LINK_DEPS spdlog Boost)
+auto_dep_exe(VFEArchiver)
+auto_boost(PROJECT VFEArchiver COMPONENTS PROGRAM_OPTIONS)

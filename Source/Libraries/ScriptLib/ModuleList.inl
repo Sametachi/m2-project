@@ -1,0 +1,41 @@
+// Binary modules
+// ScriptLib
+BINARY_MODULE(log)
+BINARY_MODULE(dbg) // TEMPORARY!
+// PythonLib
+BINARY_MODULE(grp)
+BINARY_MODULE(grpImage)
+BINARY_MODULE(grpText)
+BINARY_MODULE(grpThing)
+BINARY_MODULE(wndMgr)
+// Userinterface
+BINARY_MODULE(pack)
+BINARY_MODULE(app)
+BINARY_MODULE(systemSetting)
+BINARY_MODULE(chr)
+BINARY_MODULE(chrmgr)
+BINARY_MODULE(player)
+BINARY_MODULE(item)
+BINARY_MODULE(nonplayer)
+BINARY_MODULE(exchange)
+BINARY_MODULE(chat)
+BINARY_MODULE(textTail)
+BINARY_MODULE(net)
+BINARY_MODULE(miniMap)
+BINARY_MODULE(effect)
+BINARY_MODULE(fly)
+BINARY_MODULE(snd)
+BINARY_MODULE(event)
+BINARY_MODULE(eventMgr)
+BINARY_MODULE(shop)
+BINARY_MODULE(skill)
+BINARY_MODULE(quest)
+BINARY_MODULE(background)
+BINARY_MODULE(messenger)
+BINARY_MODULE(safebox)
+BINARY_MODULE(guild)
+BINARY_MODULE(resource)
+BINARY_MODULE(ServerStateChecker)
+
+// Cython
+//BINARY_MODULE(prototype)

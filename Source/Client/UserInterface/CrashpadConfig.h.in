@@ -1,0 +1,13 @@
+/*
+    AUTOGENEARTED BY CMAKE
+*/
+#pragma once
+
+// URL of the Crashpad report tool
+#define CRASHPAD_URL "@CRASHPAD_URL@"
+
+// Path of the app handler
+#define CRASHPAD_HANDLER_NAME "@CRASHPAD_HANDLER_NAME@"
+
+// Path of the app handler (wide)
+#define CRASHPAD_HANDLER_NAME_W L"@CRASHPAD_HANDLER_NAME@"

@@ -1,0 +1,9 @@
+#ifndef __INC_METIN_II_VERSION_H__
+#define __INC_METIN_II_VERSION_H__
+
+#define __REVISION__ "@YITSERVER_REVISION@"
+#define __OS_NAME__ "@YITSERVER_OS_NAME@"
+#define __COMPILER_NAME__ "@YITSERVER_COMPILER_NAME@"
+#define __CPU_TARGET__ "@YITSERVER_CPU_TARGET@"
+
+#endif

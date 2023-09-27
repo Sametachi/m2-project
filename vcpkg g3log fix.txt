@@ -1,0 +1,3 @@
+Uninstall any version of g3log (vcpkg remove g3log:x64-windows-static)
+Copy the file from Files/portfile.cmake into (vcpkg)/ports/g3log
+Install g3log (vcpkg install g3log:x64-windows-static)

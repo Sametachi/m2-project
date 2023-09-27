@@ -1,0 +1,52 @@
+#include "resource.h"
+#include "afxres.h"
+#include <Version.h>
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+
+IDC_CURSOR_NORMAL       CURSOR                  "Resources\\cursor.cur"
+IDC_CURSOR_CHAIR        CURSOR                  "Resources\\cursor_chair.cur"
+IDC_CURSOR_DOOR         CURSOR                  "Resources\\cursor_door.cur"
+IDC_CURSOR_NO           CURSOR                  "Resources\\cursor_no.cur"
+IDC_CURSOR_PICK         CURSOR                  "Resources\\cursor_pick.cur"
+IDC_CURSOR_TALK         CURSOR                  "Resources\\cursor_talk.cur"
+IDC_CURSOR_ATTACK       CURSOR                  "Resources\\cursor_attack.cur"
+IDC_CURSOR_BUY          CURSOR                  "Resources\\cursor_buy.cur"
+IDC_CURSOR_SELL         CURSOR                  "Resources\\cursor_sell.cur"
+IDC_CURSOR_CAMERA_ROTATE CURSOR                 "Resources\\cursor_camera_rotate.cur"
+IDC_CURSOR_HSIZE        CURSOR                  "Resources\\cursor_hsize.cur"
+IDC_CURSOR_VSIZE        CURSOR                  "Resources\\cursor_vsize.cur"
+IDC_CURSOR_HVSIZE       CURSOR                  "Resources\\cursor_hvsize.cur"
+IDI_YITSORA              ICON                   "Resources\\yitsora.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION V_VERSION_RES
+PRODUCTVERSION 4,0,0,0
+FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+FILEFLAGS 0x1L
+#else
+FILEFLAGS 0x0L
+#endif
+FILEOS 0x4L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+BLOCK "StringFileInfo"
+BEGIN
+BLOCK "080904b0"
+BEGIN
+VALUE "CompanyName", "Yitsora Online"
+VALUE "FileDescription", "Game client"
+VALUE "FileVersion", V_VERSION_STRING
+VALUE "InternalName", "Yitsora Online.exe"
+VALUE "LegalCopyright", "Copyright (C)"
+VALUE "OriginalFilename", "Yitsora Online.exe"
+VALUE "ProductName", "Yitsora Online"
+VALUE "ProductVersion", "4.0.0.0"
+END
+END
+BLOCK "VarFileInfo"
+BEGIN
+VALUE "Translation", 0x809, 1250
+END
+END
